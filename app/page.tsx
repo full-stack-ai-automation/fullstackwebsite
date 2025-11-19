@@ -248,7 +248,7 @@ export default function Home() {
       </section>
 
       {/* ROI CALCULATOR */}
-      <section className="py-20 bg-section-alt">
+      <section id="roi-calculator" className="py-20 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
