@@ -177,7 +177,7 @@ export default function Process() {
               See what results you could achieve or explore how we've helped other businesses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/roi-calculator">
+              <Link href="/#roi-calculator">
                 <Button size="lg" className="w-full sm:w-auto">
                   Calculate Your Potential ROI
                 </Button>
