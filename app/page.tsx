@@ -267,7 +267,7 @@ export default function Home() {
                 {/* Hours per week */}
                 <div>
                   <Label htmlFor="hoursPerWeek" className="text-xs md:text-sm mb-2 block">
-                    Hours spent on repetitive tasks per week
+                    Hours on repeated tasks per week
                   </Label>
                   <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 w-full justify-center mb-2">
                     {inputs.hoursPerWeek} hours
