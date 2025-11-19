@@ -500,6 +500,11 @@ None - all known issues resolved.
 - ✅ Solutions dropdown hover behavior (pt-2 wrapper prevents menu closing)
 - ✅ ROI calculator placement (full calculator integrated on home page)
 - ✅ Mobile ROI calculator optimization (responsive text, touch-friendly controls, vertical card stacking)
+- ✅ ROI calculator layout optimization (Nov 19, 2025):
+  - Swapped input/output order (inputs first, outputs second)
+  - Desktop: 6 inputs in one compact horizontal row
+  - Mobile: inputs and outputs stacked vertically
+  - Consistent label sizing across all inputs
 
 ---
 
@@ -562,7 +567,7 @@ npx shadcn@latest add [component-name]
 ### Current Deployment Status (November 19, 2025)
 **Repository**: https://github.com/full-stack-ai-automation/fullstackwebsite
 **Branch**: main
-**Latest Commit on Production**: 18ccaaa (November 19, 2025) - v1.7.0 + ROI link fixes
+**Latest Commit on Production**: 849a36b (November 19, 2025) - v1.7.0 + ROI layout optimizations
 **Deployment Platform**: Vercel
 **Live URL**: https://fullstackaiautomation.com
 **Status**: ✅ **LIVE** - v1.7.0 successfully deployed with fresh GitHub organization
@@ -572,7 +577,11 @@ npx shadcn@latest add [component-name]
 - ✅ Repository created and v1.7.0 pushed (commits: bd8b48b, 4370497, b689e86)
 - ✅ Vercel connected to new repository with auto-deployment enabled
 - ✅ Production deployment successful (commit b689e86)
-- ✅ Post-deployment fix deployed (ROI calculator anchor link - commits 8cc628b, 18ccaaa)
+- ✅ Post-deployment fixes deployed:
+  - ROI calculator anchor link (commits 8cc628b, 18ccaaa)
+  - ROI layout reorganization - inputs first, compact desktop (commit f640a52)
+  - Full input labels restored (commit e8f563e)
+  - First input label shortened for consistency (commit 849a36b)
 - ✅ All v1.7.0 features verified: 4-field form, Google Calendar booking, ROI calculator
 
 **Auto-Deployment**: ✅ Enabled - Push to main triggers automatic Vercel deployment

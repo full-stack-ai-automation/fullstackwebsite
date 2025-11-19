@@ -5,9 +5,9 @@
 **Language**: TypeScript
 **Styling**: Tailwind CSS v4
 **Component Library**: shadcn/ui + tweakcn
-**Last Updated**: November 17, 2025
+**Last Updated**: November 19, 2025
 **Build Status**: ✅ All type checks passing
-**Current Phase**: v1.7.0 - Visual Polish & UX Improvements (PHASE 2 & 3 Complete)
+**Current Phase**: v1.7.0 - DEPLOYED TO PRODUCTION (PHASE 2, 3 & 4 Complete)
 
 ---
 
@@ -229,8 +229,10 @@ fullstack-ai-nextjs/
 3. **Our Solutions** - 6 solution cards with SVG icons (gradient background)
 4. **Real Results** - 3 case study previews with SVG icons (solid background)
 5. **ROI Calculator** - Full interactive calculator (gradient background)
-   - 4 output cards in horizontal row: Time Savings, Annual Cost Savings, Additional Revenue, Total Annual Value
-   - 6 input sliders: hours/week, hourly rate, employee count, leads/month, conversion rate, sale value
+   - **INPUTS FIRST** (Desktop: 6 inputs in one compact horizontal row | Mobile: stacked vertically)
+     - Hours on repeated tasks per week, Employee count, Lead conversion rate, Hourly rate, Leads/month, Sale value
+   - **OUTPUTS SECOND** (4 cards in grid below inputs)
+     - Time Savings, Annual Cost Savings, Additional Revenue, Total Annual Value
    - Real-time calculations with mobile optimization
 6. **Our Process** - 4-step process overview (solid background)
 7. **What Our Clients Say** - Testimonials (gradient background)
@@ -438,10 +440,31 @@ export function Navbar() {
 
 ## Recent Changes
 
+### Session: November 19, 2025
+
+#### v1.7.0: Post-Deployment Optimizations ✅
+**Status**: DEPLOYED TO PRODUCTION
+
+**ROI Calculator Layout Optimization** ✅
+- Swapped input/output order: INPUTS now appear first, OUTPUTS second
+- Desktop view: 6 inputs in one compact horizontal row (md:grid-cols-6)
+- Mobile view: Inputs and outputs stacked vertically
+- Shortened first input label: "Hours on repeated tasks per week" for consistent 2-line layout
+- All full input labels restored (no abbreviations)
+- Files modified: `app/page.tsx`
+- Commits: f640a52, e8f563e, 849a36b
+
+**ROI Calculator Navigation Fix** ✅
+- Fixed broken `/roi-calculator` link on Pricing & Process page
+- Added `id="roi-calculator"` to home page ROI section for anchor scrolling
+- Updated link to `/#roi-calculator` for smooth scroll navigation
+- Files modified: `app/process/page.tsx`, `app/page.tsx`
+- Commits: 8cc628b, 18ccaaa
+
 ### Session: November 17, 2025
 
 #### v1.7.0: Visual Polish & UX Improvements ✅
-**Status**: PHASE 2 & PHASE 3 COMPLETE
+**Status**: PHASE 2, 3 & 4 COMPLETE
 
 **Task 3a: Emoji Replacement with SVG Icons** ✅
 - Removed all 21 emojis across the site
@@ -747,32 +770,28 @@ Runs ESLint to check code quality
 
 ## Deployment Notes
 
-### ⚠️ URGENT: Repository Reconnection Required (Nov 17, 2025)
+### ✅ Production Deployment (November 19, 2025)
 
-**Current Situation**:
-v1.7.0 is ready for deployment but blocked due to Vercel repository mismatch.
+**Current Status**: v1.7.0 LIVE at https://fullstackaiautomation.com
 
-**Problem**:
-- Local git pushes to: `fullstackaiautomation/fullstackwebsite`
-- Vercel is connected to: `amandamealy/fullstackwebsite` (WRONG)
-- Latest commit (4370497) not visible to Vercel
+**Repository**:
+- GitHub: https://github.com/full-stack-ai-automation/fullstackwebsite
+- Organization: "full-stack-ai-automation"
+- Branch: main
+- Latest Commit: 849a36b (November 19, 2025)
 
-**Solution Steps**:
-1. Go to Vercel Dashboard → "Full Stack AI Automation Amanda" project
-2. Navigate to Settings → Git
-3. Click "Disconnect" next to `amandamealy/fullstackwebsite`
-4. Click "Connect" on `fullstackwebsite` repository OR switch account dropdown to `fullstackaiautomation`
-5. Select `fullstackaiautomation/fullstackwebsite` repository
-6. Verify connection shows correct repository
-7. Go to Deployments → Create Deployment
-8. Deploy commit: `4370497d8d69008032d4335455197502b8d12f97`
-9. Monitor deployment at https://fullstackaiautomation.com
+**Deployment Platform**: Vercel
+- Auto-deployment enabled: Push to main → automatic deploy
+- Latest deployment: v1.7.0 + ROI layout optimizations
 
-**Important Commit Details**:
-- **Commit Hash**: 4370497d8d69008032d4335455197502b8d12f97
-- **Version**: v1.7.0
-- **Message**: "Update contact/lead intake form with simplified fields and Google Calendar booking integration"
-- **Date**: November 17, 2025
+**Recent Deployments**:
+- **849a36b** (Nov 19): ROI input label shortened for consistency
+- **e8f563e** (Nov 19): Full input labels restored
+- **f640a52** (Nov 19): ROI layout reorganization (inputs first, compact desktop)
+- **18ccaaa** (Nov 19): ROI calculator anchor ID added
+- **8cc628b** (Nov 19): ROI calculator link fixed
+- **b689e86** (Nov 19): PROJECT-MEMORY.md updated for fresh deployment
+- **4370497** (Nov 17): v1.7.0 - Simplified form + Google Calendar booking
 
 ### Build Verification
 ✅ **Type Check Status**: All files pass TypeScript compilation
@@ -948,9 +967,11 @@ For questions or support with this codebase, refer to:
 
 ---
 
-**Documentation Last Updated**: November 17, 2025
-**Current Version**: v1.7.0 (ready for deployment)
+**Documentation Last Updated**: November 19, 2025
+**Current Version**: v1.7.0 (deployed to production)
 **Build Status**: ✅ Production Ready
 **Type Safety**: ✅ All Checks Passing
 **Accessibility**: ✅ WCAG 2.1 AA Compliant
+**Production URL**: https://fullstackaiautomation.com
+**GitHub Repository**: https://github.com/full-stack-ai-automation/fullstackwebsite
 **Phase Status**: PHASE 2, 3 & 4 Complete | Footer Pages (Task 3h) Next
