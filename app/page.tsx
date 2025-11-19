@@ -267,10 +267,10 @@ export default function Home() {
                 {/* Hours per week */}
                 <div>
                   <Label htmlFor="hoursPerWeek" className="text-xs md:text-sm mb-2 block">
-                    Hours Spent
+                    Hours spent on repetitive tasks per week
                   </Label>
                   <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 w-full justify-center mb-2">
-                    {inputs.hoursPerWeek} hrs
+                    {inputs.hoursPerWeek} hours
                   </Badge>
                   <Slider
                     id="hoursPerWeek"
@@ -286,7 +286,7 @@ export default function Home() {
                 {/* Employee count */}
                 <div>
                   <Label htmlFor="employeeCount" className="text-xs md:text-sm mb-2 block">
-                    Emp. Affected
+                    Number of employees affected
                   </Label>
                   <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 w-full justify-center mb-2">
                     {inputs.employeeCount} people
@@ -305,7 +305,7 @@ export default function Home() {
                 {/* Conversion rate */}
                 <div>
                   <Label htmlFor="leadConversionRate" className="text-xs md:text-sm mb-2 block">
-                    Lead Conv Rate
+                    Current lead conversion rate (%)
                   </Label>
                   <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 w-full justify-center mb-2">
                     {inputs.leadConversionRate}%
@@ -324,7 +324,7 @@ export default function Home() {
                 {/* Hourly rate */}
                 <div>
                   <Label htmlFor="hourlyRate" className="text-xs md:text-sm mb-2 block">
-                    Avg Hourly
+                    Average hourly rate ($/hour)
                   </Label>
                   <Input
                     id="hourlyRate"
@@ -340,7 +340,7 @@ export default function Home() {
                 {/* Leads per month */}
                 <div>
                   <Label htmlFor="leadsPerMonth" className="text-xs md:text-sm mb-2 block">
-                    Leads Received
+                    Leads received per month
                   </Label>
                   <Input
                     id="leadsPerMonth"
@@ -356,7 +356,7 @@ export default function Home() {
                 {/* Average sale value */}
                 <div>
                   <Label htmlFor="averageSaleValue" className="text-xs md:text-sm mb-2 block">
-                    Avg Sale Value
+                    Average sale value ($)
                   </Label>
                   <Input
                     id="averageSaleValue"
