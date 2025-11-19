@@ -260,8 +260,119 @@ export default function Home() {
               </p>
             </div>
 
-            {/* OUTPUT CARDS */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-12">
+            {/* INPUT SLIDERS - NOW FIRST */}
+            <div className="bg-card p-4 md:p-8 rounded-lg border border-border mb-12">
+              <h3 className="mb-6 md:mb-8 text-center">Adjust Your Inputs</h3>
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-4">
+                {/* Hours per week */}
+                <div>
+                  <Label htmlFor="hoursPerWeek" className="text-xs md:text-sm mb-2 block">
+                    Hours Spent
+                  </Label>
+                  <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 w-full justify-center mb-2">
+                    {inputs.hoursPerWeek} hrs
+                  </Badge>
+                  <Slider
+                    id="hoursPerWeek"
+                    min={1}
+                    max={60}
+                    step={1}
+                    value={[inputs.hoursPerWeek]}
+                    onValueChange={(value) => handleSliderChange("hoursPerWeek", value)}
+                    className="touch-manipulation"
+                  />
+                </div>
+
+                {/* Employee count */}
+                <div>
+                  <Label htmlFor="employeeCount" className="text-xs md:text-sm mb-2 block">
+                    Emp. Affected
+                  </Label>
+                  <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 w-full justify-center mb-2">
+                    {inputs.employeeCount} people
+                  </Badge>
+                  <Slider
+                    id="employeeCount"
+                    min={1}
+                    max={50}
+                    step={1}
+                    value={[inputs.employeeCount]}
+                    onValueChange={(value) => handleSliderChange("employeeCount", value)}
+                    className="touch-manipulation"
+                  />
+                </div>
+
+                {/* Conversion rate */}
+                <div>
+                  <Label htmlFor="leadConversionRate" className="text-xs md:text-sm mb-2 block">
+                    Lead Conv Rate
+                  </Label>
+                  <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 w-full justify-center mb-2">
+                    {inputs.leadConversionRate}%
+                  </Badge>
+                  <Slider
+                    id="leadConversionRate"
+                    min={1}
+                    max={50}
+                    step={1}
+                    value={[inputs.leadConversionRate]}
+                    onValueChange={(value) => handleSliderChange("leadConversionRate", value)}
+                    className="touch-manipulation"
+                  />
+                </div>
+
+                {/* Hourly rate */}
+                <div>
+                  <Label htmlFor="hourlyRate" className="text-xs md:text-sm mb-2 block">
+                    Avg Hourly
+                  </Label>
+                  <Input
+                    id="hourlyRate"
+                    name="hourlyRate"
+                    type="number"
+                    value={inputs.hourlyRate}
+                    onChange={handleInputChange}
+                    className="text-sm h-10 md:h-12 touch-manipulation"
+                    min={0}
+                  />
+                </div>
+
+                {/* Leads per month */}
+                <div>
+                  <Label htmlFor="leadsPerMonth" className="text-xs md:text-sm mb-2 block">
+                    Leads Received
+                  </Label>
+                  <Input
+                    id="leadsPerMonth"
+                    name="leadsPerMonth"
+                    type="number"
+                    value={inputs.leadsPerMonth}
+                    onChange={handleInputChange}
+                    className="text-sm h-10 md:h-12 touch-manipulation"
+                    min={0}
+                  />
+                </div>
+
+                {/* Average sale value */}
+                <div>
+                  <Label htmlFor="averageSaleValue" className="text-xs md:text-sm mb-2 block">
+                    Avg Sale Value
+                  </Label>
+                  <Input
+                    id="averageSaleValue"
+                    name="averageSaleValue"
+                    type="number"
+                    value={inputs.averageSaleValue}
+                    onChange={handleInputChange}
+                    className="text-sm h-10 md:h-12 touch-manipulation"
+                    min={0}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* OUTPUT CARDS - NOW SECOND */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
               {/* Time Savings Card */}
               <Card className="border-primary">
                 <CardHeader className="pb-3 md:pb-6">
@@ -310,7 +421,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              {/* Total Annual Value Card - Prominent on all screen sizes */}
+              {/* Total Annual Value Card - KEY OUTPUT */}
               <Card className="bg-primary text-primary-foreground border-primary md:row-span-1">
                 <CardHeader className="pb-3 md:pb-6">
                   <CardTitle className="text-sm md:text-base">Total Annual Value</CardTitle>
@@ -335,129 +446,6 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-            </div>
-
-            {/* INPUT SLIDERS */}
-            <div className="bg-card p-4 md:p-8 rounded-lg border border-border">
-              <h3 className="mb-6 md:mb-8 text-center">Adjust Your Inputs</h3>
-              <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 md:gap-y-8">
-                {/* Hours per week */}
-                <div>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
-                    <Label htmlFor="hoursPerWeek" className="text-sm md:text-base">
-                      Hours spent on repetitive tasks per week
-                    </Label>
-                    <Badge variant="secondary" className="text-sm md:text-base px-3 py-1.5 w-fit">
-                      {inputs.hoursPerWeek} hours
-                    </Badge>
-                  </div>
-                  <Slider
-                    id="hoursPerWeek"
-                    min={1}
-                    max={60}
-                    step={1}
-                    value={[inputs.hoursPerWeek]}
-                    onValueChange={(value) => handleSliderChange("hoursPerWeek", value)}
-                    className="mb-2 touch-manipulation"
-                  />
-                  <p className="text-xs md:text-sm text-muted-foreground mt-2">
-                    Include data entry, scheduling, follow-ups, reporting, etc.
-                  </p>
-                </div>
-
-                {/* Hourly rate */}
-                <div>
-                  <Label htmlFor="hourlyRate" className="mb-3 md:mb-4 block text-sm md:text-base">
-                    Average hourly rate ($/hour)
-                  </Label>
-                  <Input
-                    id="hourlyRate"
-                    name="hourlyRate"
-                    type="number"
-                    value={inputs.hourlyRate}
-                    onChange={handleInputChange}
-                    className="text-base md:text-lg h-12 md:h-14 touch-manipulation"
-                    min={0}
-                  />
-                  <p className="text-xs md:text-sm text-muted-foreground mt-2">
-                    Your team's average cost per hour
-                  </p>
-                </div>
-
-                {/* Employee count */}
-                <div>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
-                    <Label htmlFor="employeeCount" className="text-sm md:text-base">
-                      Number of employees affected
-                    </Label>
-                    <Badge variant="secondary" className="text-sm md:text-base px-3 py-1.5 w-fit">
-                      {inputs.employeeCount} people
-                    </Badge>
-                  </div>
-                  <Slider
-                    id="employeeCount"
-                    min={1}
-                    max={50}
-                    step={1}
-                    value={[inputs.employeeCount]}
-                    onValueChange={(value) => handleSliderChange("employeeCount", value)}
-                    className="mb-2 touch-manipulation"
-                  />
-                </div>
-
-                {/* Leads per month */}
-                <div>
-                  <Label htmlFor="leadsPerMonth" className="mb-3 md:mb-4 block text-sm md:text-base">
-                    Leads received per month
-                  </Label>
-                  <Input
-                    id="leadsPerMonth"
-                    name="leadsPerMonth"
-                    type="number"
-                    value={inputs.leadsPerMonth}
-                    onChange={handleInputChange}
-                    className="text-base md:text-lg h-12 md:h-14 touch-manipulation"
-                    min={0}
-                  />
-                </div>
-
-                {/* Conversion rate */}
-                <div>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
-                    <Label htmlFor="leadConversionRate" className="text-sm md:text-base">
-                      Current lead conversion rate (%)
-                    </Label>
-                    <Badge variant="secondary" className="text-sm md:text-base px-3 py-1.5 w-fit">
-                      {inputs.leadConversionRate}%
-                    </Badge>
-                  </div>
-                  <Slider
-                    id="leadConversionRate"
-                    min={1}
-                    max={50}
-                    step={1}
-                    value={[inputs.leadConversionRate]}
-                    onValueChange={(value) => handleSliderChange("leadConversionRate", value)}
-                    className="mb-2 touch-manipulation"
-                  />
-                </div>
-
-                {/* Average sale value */}
-                <div>
-                  <Label htmlFor="averageSaleValue" className="mb-3 md:mb-4 block text-sm md:text-base">
-                    Average sale value ($)
-                  </Label>
-                  <Input
-                    id="averageSaleValue"
-                    name="averageSaleValue"
-                    type="number"
-                    value={inputs.averageSaleValue}
-                    onChange={handleInputChange}
-                    className="text-base md:text-lg h-12 md:h-14 touch-manipulation"
-                    min={0}
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
