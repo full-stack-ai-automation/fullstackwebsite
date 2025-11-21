@@ -1,0 +1,12 @@
+# robots.txt for fullstackaiautomation.com
+
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://fullstackaiautomation.com/sitemap.xml
