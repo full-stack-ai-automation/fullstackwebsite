@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Full Stack AI Automation Website
 
-## Getting Started
+Professional marketing website for Full Stack AI Automation - AI consulting and automation services.
 
-First, run the development server:
+## Live Site
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Production:** https://fullstackaiautomation.com
+
+## Tech Stack
+
+- **Framework:** Next.js 16 + React 19 + TypeScript
+- **Styling:** Tailwind CSS v4 + shadcn/ui
+- **Hosting:** Vercel
+- **Forms:** Google Forms backend
+- **Booking:** Google Calendar integration
+
+## Project Structure
+
+```
+Full Stack Website/
+├── src/
+│   ├── fullstack-ai-nextjs/     # Primary Next.js application (deployed)
+│   └── website-production/      # Static HTML backup version
+├── assets/
+│   └── Brand/
+│       ├── Logos/               # Logo PNG files
+│       └── Icons/               # SVG icons
+├── .agent/
+│   ├── Tasks/                   # PRDs & implementation plans
+│   ├── System/                  # System documentation
+│   └── SOP/                     # Standard operating procedures
+├── Check Lists/
+│   ├── Project Master Check List.md
+│   └── Completed Action Items/
+├── Data/
+│   ├── imports/                 # Data imports
+│   ├── exports/                 # Data exports
+│   └── reports/                 # Generated reports
+├── Documents/
+│   ├── Main Project Files/      # bugs.md, decisions.md, progress.md, deployment.md
+│   ├── reference files/         # Market analysis, UX review
+│   ├── guides/                  # SEO guide, Social sharing guide
+│   ├── integrations/            # Integration documentation
+│   ├── deployment history/      # Deployment logs
+│   ├── Brain/                   # Knowledge base
+│   ├── pages/                   # Page-specific documentation
+│   ├── schemas/                 # Data schemas
+│   └── archived documents/      # Old/superseded docs
+├── scripts/
+│   └── utilities/               # Utility scripts
+├── CLAUDE.md                    # AI context file
+├── README.md                    # This file
+└── .gitignore
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Run Next.js Development Server
+```bash
+cd src/fullstack-ai-nextjs
+npm install
+npm run dev
+```
+Open http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Run Static HTML Version
+```bash
+cd src/website-production
+python3 -m http.server 8000
+```
+Open http://localhost:8000
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The site auto-deploys to Vercel when pushing to the `main` branch:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+cd src/fullstack-ai-nextjs
+git add .
+git commit -m "Your changes"
+git push origin main
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Features
 
-## Deploy on Vercel
+- 6 complete pages (Home, About, Solutions, Results, Process, Analysis)
+- Light/Dark mode toggle
+- Mobile-responsive design
+- Lead capture form with Google Calendar booking
+- Modern, minimalist, bold aesthetic
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Documentation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Document | Location |
+|----------|----------|
+| Technical Docs | `src/fullstack-ai-nextjs/claude.md` |
+| Deployment Guide | `Documents/Main Project Files/deployment.md` |
+| Progress Tracking | `Documents/Main Project Files/progress.md` |
+| Decisions Log | `Documents/Main Project Files/decisions.md` |
+| Bug Tracker | `Documents/Main Project Files/bugs.md` |
+| SEO Guide | `Documents/guides/SEO-IMPLEMENTATION-SUMMARY.md` |
+| Social Sharing Guide | `Documents/guides/SOCIAL-SHARING-IMAGE-GUIDE.md` |
+| Market Analysis | `Documents/reference files/MARY-ANALYST-COMPETITIVE-ANALYSIS.md` |
+| UX Review | `Documents/reference files/RACHEL-UX-REVIEW-REPORT.md` |
+
+## Repository
+
+**GitHub:** https://github.com/amandamealy/fullstackwebsite
+
+---
+
+Built with Next.js and deployed on Vercel
