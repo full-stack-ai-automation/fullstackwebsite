@@ -167,12 +167,12 @@ export default function Analysis() {
                 </div>
                 <h1 className="mb-4">Thank You!</h1>
                 <p className="text-xl text-muted-foreground mb-8">
-                  We've received your information! Now let's get your free AI audit scheduled.
+                  We've received your information! Now let's get your audit scheduled.
                 </p>
               </div>
 
               <div className="bg-card border border-border rounded-lg p-8 mb-8">
-                <h2 className="text-xl font-semibold mb-6 text-center">Schedule Your Free AI Audit</h2>
+                <h2 className="text-xl font-semibold mb-6 text-center">Schedule Your AI Audit</h2>
                 <p className="text-muted-foreground mb-6 text-center">
                   Pick a time that works best for you - it only takes a moment!
                 </p>
@@ -207,7 +207,7 @@ export default function Analysis() {
                   <div className="flex items-start gap-3">
                     <span className="text-primary text-xl">3.</span>
                     <div>
-                      <p className="font-medium">Your Free AI Audit</p>
+                      <p className="font-medium">Your AI Audit</p>
                       <p className="text-sm text-muted-foreground">
                         We'll discuss your automation opportunities and create a customized roadmap
                       </p>
@@ -233,7 +233,7 @@ export default function Analysis() {
       <section className="py-20 md:py-32 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="mb-6">Get Your Free AI Audit</h1>
+            <h1 className="mb-6">Schedule Your AI Audit</h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               Discover exactly how AI automation can transform your business—no obligation, just valuable insights.
             </p>
@@ -366,7 +366,7 @@ export default function Analysis() {
                 className="w-full h-14 text-lg uppercase font-bold"
                 disabled={isSubmitting || !isFormValid}
               >
-                {isSubmitting ? "Submitting..." : "Get My Free AI Audit"}
+                {isSubmitting ? "Submitting..." : "Schedule Your Audit"}
               </Button>
 
               {/* Trust Indicators */}

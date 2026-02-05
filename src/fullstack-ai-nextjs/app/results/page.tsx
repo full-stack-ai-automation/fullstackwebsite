@@ -143,10 +143,10 @@ export default function Results() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="mb-4">Ready For Your Own Success Story?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Schedule a free AI audit and discover how much time and money you could be saving.
+              Schedule your AI audit and discover how much time and money you could be saving.
             </p>
             <CTAButton>
-              GET MY FREE AI AUDIT
+              SCHEDULE YOUR AUDIT
             </CTAButton>
           </div>
         </div>

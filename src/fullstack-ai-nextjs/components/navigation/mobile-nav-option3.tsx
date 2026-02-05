@@ -140,7 +140,7 @@ export function MobileNavOption3() {
                 className="w-full bg-primary hover:bg-primary/90 text-white font-bold uppercase text-sm h-14"
                 size="lg"
               >
-                GET MY FREE AI AUDIT
+                SCHEDULE YOUR AUDIT
               </Button>
             </Link>
           </div>

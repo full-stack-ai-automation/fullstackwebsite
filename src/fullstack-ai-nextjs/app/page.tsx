@@ -83,7 +83,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center">
               <CTAButton>
-                GET MY FREE AI AUDIT
+                SCHEDULE YOUR AUDIT
               </CTAButton>
             </div>
           </div>
@@ -468,7 +468,7 @@ export default function Home() {
               {
                 number: "1",
                 title: "Discovery Meeting",
-                description: "We start with a Free AI Audit call to understand your business, identify bottlenecks, and explore automation opportunities."
+                description: "We start with a comprehensive audit call to understand your business, identify bottlenecks, and explore automation opportunities."
               },
               {
                 number: "2",
@@ -545,7 +545,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="mb-4">Ready to Work 3X Faster?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Get your Free AI Audit and discover how much time and money you could be saving.
+              Schedule your AI audit and discover how much time and money you could be saving.
             </p>
             <CTAButton>
               Schedule Your Discovery Meeting

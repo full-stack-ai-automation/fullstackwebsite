@@ -127,7 +127,7 @@ export default function FormPreviewPage() {
                   <Button variant="secondary" className="flex-1" onClick={() => setCurrentStep(2)}>
                     ← Back
                   </Button>
-                  <Button className="flex-1">Get My Free AI Audit</Button>
+                  <Button className="flex-1">Schedule Your Audit</Button>
                 </div>
               </div>
             )}
@@ -248,7 +248,7 @@ export default function FormPreviewPage() {
               </div>
 
               <Button className="w-full h-12 text-lg uppercase font-bold">
-                Get My Free AI Audit
+                Schedule Your Audit
               </Button>
 
               <p className="text-center text-sm text-muted-foreground">

@@ -172,7 +172,7 @@ export function MobileNavOption2() {
                       : "bg-primary text-white hover:bg-primary/90"
                   }`}
                 >
-                  GET MY FREE AI AUDIT
+                  SCHEDULE YOUR AUDIT
                 </Button>
               </div>
 

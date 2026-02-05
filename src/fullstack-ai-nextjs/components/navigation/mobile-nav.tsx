@@ -107,7 +107,7 @@ export function MobileNav() {
                 className="w-full bg-gradient-to-r from-primary to-[#00CC88] hover:opacity-90 text-white font-bold uppercase text-sm h-14 shadow-lg shadow-primary/30"
                 size="lg"
               >
-                GET MY FREE AI AUDIT
+                SCHEDULE YOUR AUDIT
               </Button>
             </Link>
           </div>

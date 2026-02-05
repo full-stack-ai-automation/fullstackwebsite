@@ -94,7 +94,7 @@ export default function Process() {
         {
           number: "1",
           title: "Discovery Meeting (Week 1)",
-          description: "We start with a comprehensive Free AI Audit call to understand your business, identify bottlenecks, and explore automation opportunities.",
+          description: "We start with a comprehensive audit call to understand your business, identify bottlenecks, and explore automation opportunities.",
           details: [
             "Deep-dive into your current workflows",
             "Identify repetitive tasks and pain points",

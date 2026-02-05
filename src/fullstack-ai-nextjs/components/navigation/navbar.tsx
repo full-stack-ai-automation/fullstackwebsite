@@ -106,7 +106,7 @@ export function Navbar() {
             </li>
             <li>
               <CTAButton>
-                GET MY FREE AI AUDIT
+                SCHEDULE YOUR AUDIT
               </CTAButton>
             </li>
             {mounted && (

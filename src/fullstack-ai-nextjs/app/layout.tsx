@@ -21,7 +21,7 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Full Stack AI | AI-Enabled CRM Strategy & Automation",
-  description: "Stop wasting time on monotonous work. Our AI consulting team provides ROI-driven automation systems that help you work 3X faster. Get your free AI audit and see how we can save you 20+ hours weekly with custom CRM automation and workflow solutions.",
+  description: "Stop wasting time on monotonous work. Our AI consulting team provides ROI-driven automation systems that help you work 3X faster. Schedule your AI audit and see how we can save you 20+ hours weekly with custom CRM automation and workflow solutions.",
   metadataBase: new URL('https://fullstackaiautomation.com'),
   alternates: {
     canonical: '/',
