@@ -40,6 +40,8 @@ This is the marketing website for Full Stack AI Automation, an AI consulting com
 | Social sharing guide | `Documents/guides/SOCIAL-SHARING-IMAGE-GUIDE.md` |
 | Market analysis | `Documents/reference files/MARY-ANALYST-COMPETITIVE-ANALYSIS.md` |
 | UX review | `Documents/reference files/RACHEL-UX-REVIEW-REPORT.md` |
+| Blog content plan | `Documents/reference files/BLOG-ARTICLE-RECOMMENDATIONS.md` |
+| Luxury repositioning PRD | `Documents/Main Project Files/PRD-LUXURY-REPOSITIONING.md` |
 
 ## Design Guidelines
 

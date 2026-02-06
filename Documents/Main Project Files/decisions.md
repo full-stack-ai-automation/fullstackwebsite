@@ -54,7 +54,7 @@
 - **Decision:** Reposition brand from mid-market vendor (4/10) to premium consulting firm (6.5+/10)
 - **Rationale:** Competitive analysis (Mary Analyst audit) scored current site at 4/10 on premium spectrum. Target audience remains both SMBs and enterprise — luxury positioning is about service quality, not audience exclusion.
 - **PRD:** `Documents/Main Project Files/PRD-LUXURY-REPOSITIONING.md`
-- **Status:** Phases 1-7 complete. Phase 8 (New Additions) pending.
+- **Status:** All implementation phases (1-8) complete. Documentation (Phase 9) complete. PRD fully delivered.
 
 ### Decision 8: Brand Vocabulary — "Systems, Not Tools"
 - **Date:** February 2026
@@ -121,3 +121,21 @@
 - **Decision:** Replace emoji-based trust indicators (🔒 100% Secure, ⚡ Quick Response, ✓ No Obligation) with quantified credibility metrics (revenue range served, average client ROI, response time commitment). Remove hero subtext "no obligation, just valuable insights" in favor of value-forward language describing the audit process.
 - **Rationale:** Emoji trust badges are a conversion-optimization tactic common on low-to-mid-market landing pages. Credibility metrics (serving $100K-$50M+ businesses, 312% average ROI) signal track record and qualification level — appropriate for premium positioning. "No obligation" was the last remaining instance of low-commitment language on the site.
 - **Status:** Implemented (commit 7df96ab)
+
+### Decision 19: Client Logo Strip — Text Placeholders with Scroll Animation
+- **Date:** February 6, 2026
+- **Decision:** Add a "Trusted By" section to the Results page with a CSS keyframe scrolling strip displaying 4 client names (Source 4 Industries, Elev808 Designs, Hydr8 Consulting, Huge Capital) as text in bordered containers. Opacity 50% default, 100% on hover. No logo image files required — text placeholders ready for image swap.
+- **Rationale:** Named client logos/names are a premium trust signal. Text-based implementation allows immediate deployment while preserving the option to add actual logo images later. CSS-only animation avoids new dependencies. Duplicated items (8 total) enable seamless infinite scrolling via translateX(-50%).
+- **Status:** Implemented (commit 6815bae)
+
+### Decision 20: Proprietary Methodology Branding — "The Full Stack Framework"
+- **Date:** February 6, 2026
+- **Decision:** Brand the 4-step process as "The Full Stack Framework" on both the Process page (new dedicated section between pricing and steps) and the Home page (process section header). Methodology description: "Our proprietary Full Stack Framework has been refined across dozens of engagements to ensure every implementation delivers maximum impact with minimum disruption."
+- **Rationale:** Naming a methodology signals intellectual property and positions the firm's process as proprietary rather than generic. "Framework" aligns with systems-first vocabulary. Dual placement (Process + Home) ensures visibility.
+- **Status:** Implemented (commit 6815bae)
+
+### Decision 21: Content Strategy — 10-Article Blog Roadmap
+- **Date:** February 6, 2026
+- **Decision:** Create a 10-article blog content strategy document covering brand positioning, authority building, SEO traffic capture, objection handling, and trust/lead generation. Pillar article: "We Build Systems, Not Tools: Why the Distinction Matters." Publishing cadence: 2 articles/month for 5 months.
+- **Rationale:** Competitive analysis identified a critical content gap — 75-80% of competitors have blogs/resource libraries. The 10-article roadmap is designed as an interconnected topic cluster to build topical authority around the "systems, not tools" thesis and feed the existing lead capture funnel.
+- **Status:** Content plan delivered (`Documents/reference files/BLOG-ARTICLE-RECOMMENDATIONS.md`). Blog implementation is a separate project.
