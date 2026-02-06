@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { CTAButton } from "@/components/ui/cta-button";
 
 export default function About() {
   return (
@@ -15,7 +13,7 @@ export default function About() {
               We're Humans Building <span className="text-primary">AI Solutions</span>
             </h1>
             <p className="text-lg text-muted-foreground text-center">
-              Full Stack AI Automation was founded by business owners who got tired of watching companies waste money on AI tools that don't deliver results.
+              Full Stack AI Automation was founded on a single conviction: that AI implementation fails when it is disconnected from real business operations. Our team brings deep expertise in both technology and business strategy to close that gap.
             </p>
           </div>
         </div>
@@ -29,19 +27,19 @@ export default function About() {
               <div>
                 <h2 className="mb-4">Our Story</h2>
                 <p className="text-muted-foreground mb-4">
-                  We've been in your shoes. We've struggled with overwhelmed teams, lost leads, and operations that couldn't scale. We've also seen firsthand how the right AI automation can transform a business.
+                  Having led technology transformation initiatives across service businesses and enterprise organizations, our team understands both sides of the AI implementation challenge: the strategic vision and the operational reality.
                 </p>
                 <p className="text-muted-foreground">
-                  That's why we started Full Stack AI Automation—to bridge the gap between AI potential and real-world business value. We're not here to sell you the latest tech trend. We're here to solve your actual problems with systems that work.
+                  That insight is what drives every engagement. We are not here to deploy the latest trend. We are here to architect systems that produce measurable, compounding results — and to stay accountable for those results over time.
                 </p>
               </div>
               <div>
                 <h2 className="mb-4">Our Mission</h2>
                 <p className="text-muted-foreground mb-4">
-                  To empower businesses of all sizes with AI automation that delivers measurable results. We believe technology should serve people, not replace them.
+                  To deliver enterprise-grade AI automation to growth-oriented businesses — from service trades scaling their first million to corporations optimizing across departments. We believe technology should amplify human capability, not replace it.
                 </p>
                 <p className="text-muted-foreground">
-                  Every system we build is designed to amplify your team's capabilities, eliminate monotonous work, and help you focus on what really matters—growing your business and serving your customers.
+                  Every system we build is designed to amplify your team's capabilities, eliminate operational drag, and create compounding value — so you can focus on growth, strategy, and serving your customers at the highest level.
                 </p>
               </div>
             </div>
@@ -67,6 +65,33 @@ export default function About() {
                   <p className="text-muted-foreground">{value.description}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LEADERSHIP SECTION */}
+      <section className="py-20 bg-section-alt">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-12 text-center">Our <span className="text-primary">Leadership</span></h2>
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-card p-8 rounded-lg border border-border text-center">
+                {/* TODO: Replace placeholder with actual headshot when available */}
+                <div className="w-28 h-28 rounded-full bg-muted border-2 border-primary mx-auto mb-6 flex items-center justify-center">
+                  <span className="text-3xl font-bold text-primary">TG</span>
+                </div>
+                <h3 className="mb-1">Taylor Grassmick</h3>
+                <p className="text-primary font-medium mb-4">Founder</p>
+                <p className="text-muted-foreground max-w-lg mx-auto">
+                  Taylor Grassmick founded Full Stack AI Automation on a single conviction: AI only
+                  delivers when it is engineered into the way a business actually operates, not bolted
+                  on as an afterthought. With deep expertise spanning both technical architecture and
+                  day-to-day business operations, Taylor personally designs the integrated systems that
+                  have driven seven-figure growth for clients across industries. Every engagement begins
+                  where most consultants stop — at the intersection of strategy and execution.
+                </p>
+              </div>
             </div>
           </div>
         </div>
