@@ -12,7 +12,7 @@ export default function Solutions() {
       iconSrc: "/icons/CRM.svg",
       iconAlt: "CRM Automation",
       title: "AI-Enabled CRM Automation",
-      description: "Stop losing leads in spreadsheets and email chains. Our AI-enabled CRM systems automatically capture every lead, follow up at the perfect time, and keep your pipeline organized—so you never miss an opportunity.",
+      description: "Our CRM intelligence systems create a closed-loop pipeline where every lead is captured, scored, and engaged at the optimal moment. Clients implementing this system have seen follow-up rates increase by 85% and pipeline velocity triple within 90 days.",
       benefits: [
         "Automatic lead capture from all sources",
         "Smart follow-up sequences based on behavior",
@@ -64,7 +64,7 @@ export default function Solutions() {
       iconSrc: "/icons/OP.svg",
       iconAlt: "Operations Optimization",
       title: "Operations Optimization",
-      description: "Built specifically for service companies like plumbing, landscaping, and roofing, our operations optimization systems streamline everything from job scheduling to invoicing. Spend less time on paperwork and more time serving customers.",
+      description: "Our operations optimization systems streamline everything from job scheduling to invoicing — refined across industries we've mastered including plumbing, landscaping, roofing, spray foam, and home improvement. Built for service-based businesses where operational complexity scales with revenue.",
       benefits: [
         "Smart job scheduling and dispatch",
         "Automated invoicing and payment tracking",
@@ -94,10 +94,10 @@ export default function Solutions() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="mb-6">
-              AI Solutions That <span className="text-primary">Actually Work</span>
+              Tools Help Individuals. <span className="text-primary">Systems</span> Help Businesses.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Customized automation systems designed to eliminate monotonous work and amplify your team's productivity.
+              Every solution we architect is designed as an integrated system — connecting your sales pipeline, operations, and customer experience into automation that compounds across your entire organization.
             </p>
             <Link href="/results">
               <Button variant="outline" size="lg" className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
@@ -131,7 +131,7 @@ export default function Solutions() {
                   <h2 className="mb-4">{solution.title}</h2>
                   <p className="text-lg text-muted-foreground mb-6">{solution.description}</p>
 
-                  <h3 className="mb-4">What You Get:</h3>
+                  <h3 className="mb-4">What We Deliver:</h3>
                   <ul className="space-y-2">
                     {solution.benefits.map((benefit, i) => (
                       <li key={i} className="flex items-start gap-2">
