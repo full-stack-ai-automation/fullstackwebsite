@@ -73,13 +73,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6">
-              Stop Wasting Time on{" "}
-              <span className="text-primary">Monotonous Work</span>
+              We Build{" "}
+              <span className="text-primary">Systems</span>, Not Tools
             </h1>
             <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">
-              While your competitors are using AI to work 3X faster and produce 3X the results,
-              are you being left behind? Our AI consulting team delivers ROI-driven automation
-              systems that transform how your business operates.
+              Most companies are collecting AI tools that work in isolation. We design the
+              connective tissue — integrated automation systems that compound across your entire
+              operation. The difference between a tool and a system is the difference between
+              incremental improvement and structural advantage.
             </p>
             <div className="flex justify-center">
               <CTAButton>
@@ -95,38 +96,39 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="mb-4">
-              Real People Building <span className="text-primary">Real Solutions</span>
+              Human Expertise. <span className="text-primary">Engineered Outcomes.</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              We're not AI creating AI—we're a team of experienced humans who understand your struggles
-              with implementing artificial intelligence. We've seen businesses waste time and money on
-              AI tools that don't deliver results. That's why we built Full Stack AI Automation: to
-              bridge the gap between AI potential and real-world business value.
+              AI implementation fails when it is treated as a technology problem. It is a business
+              architecture problem — and it requires consultants who understand both. Our team brings
+              deep operational experience across industries, combining strategic insight with hands-on
+              engineering to build systems that do not just work on day one, but compound in value
+              over time.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors">
-              <h3 className="mb-3">Human-Centered Approach</h3>
+              <h3 className="mb-3">Embedded Partnership</h3>
               <p className="text-muted-foreground">
-                Our consultants work directly with your team to understand your unique challenges
-                and design custom AI solutions that actually fit your workflow.
+                We embed with your team as consultants, architects, and builders — designing systems
+                around how your business actually operates, not how a software vendor thinks it should.
               </p>
             </div>
 
             <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors">
-              <h3 className="mb-3">Results-Driven Strategy</h3>
+              <h3 className="mb-3">Measurable Outcomes</h3>
               <p className="text-muted-foreground">
-                We don't sell you technology for technology's sake. Every automation we implement
-                is designed to deliver measurable ROI and time savings.
+                Every system we build is measured by the value it delivers — recovered revenue,
+                eliminated bottlenecks, and operations that scale without adding headcount.
               </p>
             </div>
 
             <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors">
-              <h3 className="mb-3">Partnership, Not Just Service</h3>
+              <h3 className="mb-3">Compounding Returns</h3>
               <p className="text-muted-foreground">
-                We become an extension of your team, providing ongoing support and optimization
-                to ensure your AI systems continue delivering value.
+                Our engagements are designed to compound results over time. Ongoing refinement
+                ensures your systems grow more valuable with every quarter, not less.
               </p>
             </div>
           </div>
@@ -138,10 +140,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="mb-4">
-              Our <span className="text-primary">Solutions</span>
+              Tools Help Individuals. <span className="text-primary">Systems</span> Help Businesses.
             </h2>
             <p className="text-lg text-muted-foreground">
-              Customized AI automation systems designed to eliminate monotonous work and amplify your team's productivity.
+              Every solution we architect is designed as an integrated system — connecting your
+              sales pipeline, operations, and customer experience into automation that compounds
+              across your entire organization.
             </p>
           </div>
 
@@ -169,7 +173,7 @@ export default function Home() {
               },
               {
                 title: "Operations Optimization",
-                description: "Streamline your entire operation from scheduling to invoicing. Perfect for service companies like plumbing, landscaping, and roofing.",
+                description: "Streamline your entire operation from scheduling to invoicing. Refined across industries we've mastered — plumbing, landscaping, roofing, spray foam, and beyond.",
                 link: "/solutions#operations"
               },
               {
@@ -195,10 +199,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="mb-4">
-              Real <span className="text-primary">Results</span>
+              Client <span className="text-primary">Outcomes</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              See how businesses like yours are transforming their operations with AI automation.
+              We measure our work by what it produces — recovered revenue, eliminated bottlenecks,
+              and operations that scale without adding headcount.
             </p>
           </div>
 
@@ -206,23 +211,23 @@ export default function Home() {
             {[
               {
                 iconSrc: "/icons/85-percent.svg",
-                iconAlt: "85% Increase",
-                title: "85% Increase in Follow-Up Rate",
-                description: "A regional home improvement company automated their lead follow-up process, converting 3X more prospects into customers.",
+                iconAlt: "10X Growth",
+                title: "$1M to $10M in 3 Years",
+                description: "Elev808 Designs scaled from $1M to $10M in 3 years through marketing automation and customer journey streamlining.",
                 link: "/results#case-study-1"
               },
               {
                 iconSrc: "/icons/20-plus.svg",
-                iconAlt: "20+ Hours",
-                title: "20+ Hours Saved Per Week",
-                description: "A plumbing service eliminated manual scheduling and invoicing, freeing up time for growth and customer service.",
+                iconAlt: "70% Growth",
+                title: "70% Revenue Growth Over 3 Years",
+                description: "Source 4 Industries, a 50-year-old family company, achieved 70% revenue growth over 3 years with our automation systems.",
                 link: "/results#case-study-2"
               },
               {
                 iconSrc: "/icons/50k.svg",
-                iconAlt: "$50K Savings",
-                title: "$50K+ Annual Savings",
-                description: "A corporate client reduced operational costs by automating data entry and report generation across departments.",
+                iconAlt: "78% Increase",
+                title: "78% Revenue Increase by Month 4",
+                description: "Huge Capital saw 78% revenue increase by month 4 of working together, reaching their highest month to date.",
                 link: "/results#case-study-3"
               }
             ].map((result, index) => (
@@ -467,8 +472,8 @@ export default function Home() {
             {[
               {
                 number: "1",
-                title: "Discovery Meeting",
-                description: "We start with a comprehensive audit call to understand your business, identify bottlenecks, and explore automation opportunities."
+                title: "Strategic Assessment",
+                description: "Every engagement begins with a comprehensive review of your operations, technology stack, and growth objectives to identify the highest-impact automation opportunities."
               },
               {
                 number: "2",
@@ -512,21 +517,22 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
+            {/* TODO: Replace with actual client testimonial quotes when available */}
             {[
               {
-                text: "Full Stack AI Automation transformed how we operate. We went from drowning in paperwork to having a streamlined system that runs itself. Our follow-up rate has never been higher.",
-                author: "Mike Johnson",
-                role: "Owner, Johnson's Plumbing Services"
+                text: "Full Stack AI Automation didn't just give us tools — they built a system that our entire team relies on daily. The results compound with every month.",
+                author: "Source 4 Industries",
+                role: "Service & Manufacturing"
               },
               {
-                text: "I was skeptical about AI until I met this team. They took the time to understand our business and created a solution that actually works. We're saving 20 hours a week on admin tasks alone.",
-                author: "Sarah Chen",
-                role: "Operations Manager, GreenScape Landscaping"
+                text: "We went from $1M to $10M. That doesn't happen with another SaaS subscription. It happens with the right team building the right systems.",
+                author: "Elev808 Designs",
+                role: "Marketing & E-Commerce"
               },
               {
-                text: "Finally, an AI solution that delivers real ROI. The team at Full Stack AI didn't just sell us software—they became our partners in growth. Our efficiency has tripled.",
-                author: "David Martinez",
-                role: "CEO, Martinez Roofing & Construction"
+                text: "Within 3 months we grew from 26 to 40 consulting clients. Now we're building a SaaS product with the same team.",
+                author: "Hydr8 Consulting",
+                role: "Professional Services"
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-card p-6 rounded-lg border border-border">
@@ -543,12 +549,13 @@ export default function Home() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="mb-4">Ready to Work 3X Faster?</h2>
+            <h2 className="mb-4">See Where the Leverage Is</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Schedule your AI audit and discover how much time and money you could be saving.
+              Our audit identifies the highest-leverage automation opportunities specific to your
+              operation and builds a preliminary case for ROI.
             </p>
             <CTAButton>
-              Schedule Your Discovery Meeting
+              SCHEDULE YOUR AUDIT
             </CTAButton>
           </div>
         </div>

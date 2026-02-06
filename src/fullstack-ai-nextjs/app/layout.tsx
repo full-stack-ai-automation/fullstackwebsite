@@ -21,7 +21,7 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Full Stack AI | AI-Enabled CRM Strategy & Automation",
-  description: "Stop wasting time on monotonous work. Our AI consulting team provides ROI-driven automation systems that help you work 3X faster. Schedule your AI audit and see how we can save you 20+ hours weekly with custom CRM automation and workflow solutions.",
+  description: "Bespoke AI automation systems engineered to compound revenue and scale with precision. We are consultants, architects, and builders who design integrated systems around how your business actually operates. Strategy, integration & hands-on executive partnership.",
   metadataBase: new URL('https://fullstackaiautomation.com'),
   alternates: {
     canonical: '/',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     url: 'https://fullstackaiautomation.com',
     siteName: 'Full Stack AI',
     title: 'Full Stack AI | AI-Enabled CRM Strategy & Automation',
-    description: 'Stop wasting time on monotonous work. Our AI consulting team provides ROI-driven automation systems that help you work 3X faster.',
+    description: 'We build systems, not tools. Bespoke AI automation designed to compound revenue, eliminate operational drag, and scale with your growth.',
     images: [
       {
         url: '/og-image.jpg',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Full Stack AI | AI-Enabled CRM Strategy & Automation',
-    description: 'Stop wasting time on monotonous work. Our AI consulting team provides ROI-driven automation systems that help you work 3X faster.',
+    description: 'We build systems, not tools. Bespoke AI automation designed to compound revenue, eliminate operational drag, and scale with your growth.',
     images: ['/twitter-image.jpg'],
   },
   robots: {
