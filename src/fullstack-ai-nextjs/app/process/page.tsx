@@ -28,9 +28,8 @@ export default function Process() {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
-                  name: "Starter",
-                  price: "$5K-$15K",
-                  description: "Perfect for small businesses ready to automate one key workflow.",
+                  name: "Focused Engagement",
+                  description: "Single workflow transformation with training and 30-day optimization. Ideal for businesses ready to automate their highest-impact process.",
                   features: [
                     "Single automation workflow",
                     "CRM setup or basic workflow",
@@ -39,9 +38,8 @@ export default function Process() {
                   ]
                 },
                 {
-                  name: "Professional",
-                  price: "$15K-$40K",
-                  description: "Ideal for growing companies ready to scale with integrated systems.",
+                  name: "Integrated Systems",
+                  description: "Multiple connected automation systems with custom integrations and 60-day optimization. For operations ready to scale through systematic automation.",
                   features: [
                     "Multiple integrated automations",
                     "Full CRM + workflow systems",
@@ -51,9 +49,8 @@ export default function Process() {
                   featured: true
                 },
                 {
-                  name: "Enterprise",
-                  price: "$40K+",
-                  description: "For established companies needing comprehensive AI transformation.",
+                  name: "Full Transformation",
+                  description: "Comprehensive AI architecture across your entire operation with advanced analytics and ongoing strategic partnership.",
                   features: [
                     "Fully custom AI solutions",
                     "Enterprise integrations",
@@ -68,11 +65,7 @@ export default function Process() {
                     tier.featured ? 'border-primary' : 'border-border'
                   }`}
                 >
-                  {tier.featured && (
-                    <div className="text-primary font-bold mb-2">MOST POPULAR</div>
-                  )}
                   <h3 className="mb-2">{tier.name}</h3>
-                  <p className="text-3xl font-bold text-primary mb-4">{tier.price}</p>
                   <p className="text-muted-foreground mb-6">{tier.description}</p>
                   <ul className="space-y-2">
                     {tier.features.map((feature, i) => (
@@ -85,6 +78,11 @@ export default function Process() {
                 </div>
               ))}
             </div>
+            <p className="text-center text-muted-foreground mt-8">
+              Investment is scoped during the Strategy phase based on your specific objectives,
+              operational complexity, and desired timeline. Every engagement is designed to deliver
+              measurable ROI.
+            </p>
           </div>
         </div>
       </section>
@@ -93,14 +91,14 @@ export default function Process() {
       {[
         {
           number: "1",
-          title: "Discovery Meeting (Week 1)",
-          description: "We start with a comprehensive audit call to understand your business, identify bottlenecks, and explore automation opportunities.",
+          title: "Strategic Assessment (Week 1)",
+          description: "Every engagement begins with a comprehensive review of your operations, technology stack, and growth objectives to identify the highest-impact automation opportunities.",
           details: [
             "Deep-dive into your current workflows",
             "Identify repetitive tasks and pain points",
             "Discuss your goals and growth challenges",
             "Explore potential automation opportunities",
-            "No obligation—just valuable insights"
+            "Preliminary automation opportunity mapping"
           ]
         },
         {
@@ -152,7 +150,7 @@ export default function Process() {
                 <div className="flex-1">
                   <h2 className="mb-4">{step.title}</h2>
                   <p className="text-lg text-muted-foreground mb-6">{step.description}</p>
-                  <h3 className="mb-4">What You Get:</h3>
+                  <h3 className="mb-4">What We Deliver:</h3>
                   <ul className="space-y-2">
                     {step.details.map((detail, i) => (
                       <li key={i} className="flex items-start gap-2">
