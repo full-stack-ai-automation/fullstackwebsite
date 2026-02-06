@@ -235,7 +235,7 @@ export default function Analysis() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="mb-6">Schedule Your AI Audit</h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Discover exactly how AI automation can transform your business—no obligation, just valuable insights.
+              Share a few details about your operation. We will review your workflow architecture, identify the highest-ROI automation opportunities, and come to our first conversation with a preliminary assessment already in hand.
             </p>
           </div>
         </div>
@@ -371,18 +371,11 @@ export default function Analysis() {
 
               {/* Trust Indicators */}
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-sm text-muted-foreground pt-4">
-                <div className="flex items-center gap-2">
-                  <span role="img" aria-label="Lock">🔒</span>
-                  <span>100% Secure</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span role="img" aria-label="Lightning bolt">⚡</span>
-                  <span>Quick Response</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span role="img" aria-label="Checkmark">✓</span>
-                  <span>No Obligation</span>
-                </div>
+                <span>Serving businesses from $100K to $50M+ in revenue</span>
+                <span className="hidden md:inline text-border">|</span>
+                <span>Average client ROI of 312% in year one</span>
+                <span className="hidden md:inline text-border">|</span>
+                <span>Response within one business day</span>
               </div>
             </form>
           </div>

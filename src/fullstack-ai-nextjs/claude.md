@@ -5,9 +5,9 @@
 **Language**: TypeScript
 **Styling**: Tailwind CSS v4
 **Component Library**: shadcn/ui + tweakcn
-**Last Updated**: November 19, 2025
+**Last Updated**: February 6, 2026
 **Build Status**: ✅ All type checks passing
-**Current Phase**: v1.7.0 - DEPLOYED TO PRODUCTION (PHASE 2, 3 & 4 Complete)
+**Current Phase**: v2.6.0 - DEPLOYED TO PRODUCTION (Luxury Repositioning Phases 1-7 Complete)
 
 ---
 
@@ -110,10 +110,10 @@ fullstack-ai-nextjs/
 │   │   ├── logo-type-light.png # Black type logo for light mode
 │   │   ├── logo-type-dark.png  # White type logo for dark mode
 │   │   └── logo-favicon.png    # Browser favicon
-│   └── icons/                 # SVG icons for solutions & results
-│       ├── 85-percent.svg     # 85% increase icon
-│       ├── 20-plus.svg        # 20+ hours icon
-│       ├── 50k.svg            # $50K savings icon
+│   └── icons/                 # SVG icons for solutions (results page no longer uses icons)
+│       ├── 85-percent.svg     # Legacy icon (unused since Phase 5 rewrite)
+│       ├── 20-plus.svg        # Legacy icon (unused since Phase 5 rewrite)
+│       ├── 50k.svg            # Legacy icon (unused since Phase 5 rewrite)
 │       ├── CRM.svg            # CRM automation icon
 │       ├── WORKFLOW.svg       # Workflow automation icon
 │       ├── COMM.svg           # Communication systems icon
@@ -260,27 +260,26 @@ fullstack-ai-nextjs/
 - Each solution includes:
   - Large SVG icon (80x80)
   - Description
-  - "What You Get" bullet list with checkmarks
+  - "What We Deliver" bullet list with checkmarks
 - Alternating section backgrounds
 
 **Navigation**: Accessible via "Solutions" dropdown → "Overview"
 
 ### 3. Results (`/results`)
-**Purpose**: Case studies demonstrating real business outcomes
+**Purpose**: Named client case studies demonstrating real business outcomes
 
 **Sections**:
-- Hero introducing results
-- 3 detailed case studies with SVG icons:
-  1. **85% Increase in Follow-Up Rate** (Home Improvement) - 85-percent.svg
-  2. **20+ Hours Saved Per Week** (Plumbing Services) - 20-plus.svg
-  3. **$50K+ Annual Savings** (Corporate Multi-Department) - 50k.svg
+- Hero: "Client Outcomes" with premium subtext
+- 4 named client case studies (no SVG icons — text-based metric cards):
+  1. **$1M to $10M in 3 Years** — Elev808 Designs (Marketing & E-Commerce)
+  2. **70% Revenue Growth for a 50-Year Legacy Business** — Source 4 Industries (Service & Manufacturing)
+  3. **54% Client Growth in 3 Months** — Hydr8 Consulting (Professional Services)
+  4. **78% Revenue Increase by Month 4** — Huge Capital (Financial Services)
 - Each case study includes:
-  - Large SVG icon (80x80)
-  - Client type/industry
-  - Problem description
-  - Solution implementation
+  - Named company with industry subtitle
+  - Narrative paragraph with real outcome data
   - 3 metric cards with quantified results
-- Final CTA section
+- Bottom CTA: "Explore What This Could Look Like For Your Business"
 
 **Navigation**: Accessible via "Solutions" dropdown → "Case Studies"
 
@@ -301,24 +300,26 @@ fullstack-ai-nextjs/
 **Navigation Change**: Removed hard CTA, replaced with soft navigation options
 
 ### 5. Pricing & Process (`/process`)
-**Purpose**: Transparent pricing and engagement process
+**Purpose**: Qualitative engagement tiers and process methodology
 
 **Sections** (REVERSED ORDER - Pricing First):
 - Hero: "Pricing & Process" (gradient background)
-- **Investment Ranges** (solid background) - NOW FIRST
-  - Starter Package: $15,000 - $25,000
-  - Professional Package: $25,000 - $40,000
-  - Enterprise Package: $40,000+
+- **Engagement Tiers** (solid background) - NOW FIRST
+  - Focused Engagement: Single workflow transformation with 30-day optimization
+  - Integrated Systems: Multiple connected systems with 60-day optimization (featured border)
+  - Full Transformation: Comprehensive AI architecture with ongoing partnership
+  - Investment scoping footer: "Investment is scoped during the Strategy phase..."
+  - NOTE: No dollar amounts displayed — pricing scoped during Strategy phase
 - **Our Process** (alternating gradient/solid backgrounds):
-  1. **Discovery Meeting** (Week 1)
+  1. **Strategic Assessment** (Week 1)
   2. **Strategy & Planning** (Week 2-3)
-  3. **Implementation** (Week 4-12) - UPDATED timeline
+  3. **Implementation** (Week 4-12)
   4. **Optimization & Support** (Ongoing)
 - Each step includes:
   - Large number indicator
   - Timeline estimate
   - Description
-  - "What You Get" bullet list
+  - "What We Deliver" bullet list
 - Soft conversion bridge (solid background):
   - "Calculate Your ROI" button → home page ROI calculator
   - "See Success Stories" button → /results
@@ -342,7 +343,7 @@ fullstack-ai-nextjs/
 - Google Forms backend integration (no-cors mode)
 - Real-time form validation with error messages
 - Accessibility features (ARIA labels, keyboard navigation)
-- Trust indicators (Secure, Quick Response, No Obligation)
+- Trust indicators (credibility metrics: revenue range, ROI, response time)
 
 ---
 
@@ -772,17 +773,17 @@ Runs ESLint to check code quality
 
 ### ✅ Production Deployment (November 19, 2025)
 
-**Current Status**: v1.7.0 LIVE at https://fullstackaiautomation.com
+**Current Status**: v2.5.0 LIVE at https://fullstackaiautomation.com
 
 **Repository**:
 - GitHub: https://github.com/full-stack-ai-automation/fullstackwebsite
 - Organization: "full-stack-ai-automation"
 - Branch: main
-- Latest Commit: 849a36b (November 19, 2025)
+- Latest Commit: a950087 (February 6, 2026)
 
 **Deployment Platform**: Vercel
 - Auto-deployment enabled: Push to main → automatic deploy
-- Latest deployment: v1.7.0 + ROI layout optimizations
+- Latest deployment: v2.6.0 — Luxury Repositioning Phases 1-7
 
 **Recent Deployments**:
 - **849a36b** (Nov 19): ROI input label shortened for consistency
@@ -967,11 +968,11 @@ For questions or support with this codebase, refer to:
 
 ---
 
-**Documentation Last Updated**: November 19, 2025
-**Current Version**: v1.7.0 (deployed to production)
+**Documentation Last Updated**: February 6, 2026
+**Current Version**: v2.6.0 (deployed to production)
 **Build Status**: ✅ Production Ready
 **Type Safety**: ✅ All Checks Passing
 **Accessibility**: ✅ WCAG 2.1 AA Compliant
 **Production URL**: https://fullstackaiautomation.com
 **GitHub Repository**: https://github.com/full-stack-ai-automation/fullstackwebsite
-**Phase Status**: PHASE 2, 3 & 4 Complete | Footer Pages (Task 3h) Next
+**Phase Status**: Luxury Repositioning Phases 1-7 Complete | Phase 8 (New Additions) Next
