@@ -126,6 +126,48 @@ export default function Results() {
         </div>
       </section>
 
+      {/* CLIENT LOGOS */}
+      <style>{`
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .logo-scroll {
+          animation: scroll 20s linear infinite;
+        }
+        .logo-scroll:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-center mb-12">Trusted By</h2>
+          <div className="overflow-hidden">
+            <div className="logo-scroll flex gap-12 md:gap-16 w-max">
+              {[
+                "Source 4 Industries",
+                "Elev808 Designs",
+                "Hydr8 Consulting",
+                "Huge Capital",
+                "Source 4 Industries",
+                "Elev808 Designs",
+                "Hydr8 Consulting",
+                "Huge Capital",
+              ].map((client, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 px-6 py-3 border border-border rounded-lg opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-default"
+                >
+                  <span className="text-lg md:text-xl font-bold text-foreground whitespace-nowrap">
+                    {client}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20">
         <div className="container mx-auto px-4">

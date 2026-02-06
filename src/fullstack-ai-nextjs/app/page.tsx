@@ -461,10 +461,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="mb-4">
-              Our <span className="text-primary">Process</span>
+              The Full Stack <span className="text-primary">Framework</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              From discovery to deployment, here's how we transform your business with AI automation.
+              Our proprietary four-phase methodology — refined across dozens of engagements to deliver maximum impact with minimum disruption.
             </p>
           </div>
 

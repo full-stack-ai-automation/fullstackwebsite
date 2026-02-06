@@ -87,6 +87,20 @@ export default function Process() {
         </div>
       </section>
 
+      {/* METHODOLOGY BRAND */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="mb-4">
+              The Full Stack <span className="text-primary">Framework</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Our proprietary Full Stack Framework has been refined across dozens of engagements to ensure every implementation delivers maximum impact with minimum disruption.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* PROCESS STEPS - NOW SECOND */}
       {[
         {

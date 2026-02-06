@@ -645,12 +645,14 @@ Response within one business day
 - Mobile: smaller logos, same scrolling behavior
 
 **Acceptance Criteria:**
-- [ ] Client logo section added to Results page
-- [ ] Horizontal scrolling animation works
-- [ ] Grayscale with color-on-hover treatment
-- [ ] At least 4 client names displayed
-- [ ] Responsive on mobile
-- [ ] Typecheck passes
+- [x] Client logo section added to Results page
+- [x] Horizontal scrolling animation works
+- [x] Grayscale with color-on-hover treatment
+- [x] At least 4 client names displayed
+- [x] Responsive on mobile
+- [x] Typecheck passes
+
+**Status: COMPLETE (Feb 6, 2026)**
 
 #### US-019: Brand the Methodology
 **Description:** As a premium firm, our 4-step process should have a proprietary name that signals intellectual property.
@@ -664,10 +666,12 @@ Response within one business day
 - Consider adding a simple visual diagram in a future iteration
 
 **Acceptance Criteria:**
-- [ ] "The Full Stack Framework" referenced on Process page
-- [ ] "The Full Stack Framework" referenced on Home page process section
-- [ ] Methodology description added
-- [ ] Typecheck passes
+- [x] "The Full Stack Framework" referenced on Process page
+- [x] "The Full Stack Framework" referenced on Home page process section
+- [x] Methodology description added
+- [x] Typecheck passes
+
+**Status: COMPLETE (Feb 6, 2026)**
 
 #### US-020: Generate Blog/Thought Leadership Article Recommendations
 **Description:** As a brand building authority, we need a content roadmap of 10 foundational articles.
@@ -697,8 +701,10 @@ Response within one business day
 10. **"What to Look for in an AI Consulting Partner (And What to Run From)"** — Buyer's guide that positions FSAA as the standard-setter. Establishes evaluation criteria that favor your strengths.
 
 **Acceptance Criteria:**
-- [ ] Article list saved to Documents
-- [ ] Each article has a title, positioning rationale, and target keyword theme
+- [x] Article list saved to Documents
+- [x] Each article has a title, positioning rationale, and target keyword theme
+
+**Status: COMPLETE (Feb 6, 2026)**
 
 ---
 
